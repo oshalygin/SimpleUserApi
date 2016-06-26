@@ -10,3 +10,7 @@ This is a sample application showing the basics behind a simple API that adds, u
 * The DataLayer(DAL) is a complex stub to minimize plumbing.
 * There is no queue or retry mechanism built in, that would require another layer of either MSMQ or building out(not recommended especially for a simple project like this) a DB queue.  The DB queue would look something along the lines of a UserRequest and UserUpdate tables which would be processed on a timer(said timer would make a query against this table and look for a column 'Processed' which would be a DateTime).
 * This whole project was time boxed to one hour, so please keep that in mind while reading the code.
+* No authentication mechanism is introduced.  This adds unnecessary complexity and plumbing, but anything along of Individual Accounts, OAuth, JSON Web Tokens, Owin, etc could be used.
+* This API can be accessed with any browser or with tools such as PostMan/Fiddler.
+* There is no user/web interface.
+* The base api endpoint is http://localhost:9005/api/user
