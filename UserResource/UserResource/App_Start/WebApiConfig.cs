@@ -6,7 +6,8 @@ namespace UserResource
     {
         public static void Register(HttpConfiguration config)
         {
-            
+            DependencyRegistration.Registration();
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
