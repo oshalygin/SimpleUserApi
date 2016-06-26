@@ -137,14 +137,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\ContactDetails\" />
+    <Folder Include="Views\ContactInformation\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Attributes\ApiControllerConfigurationAttribute.cs" />
-    <Compile Include="Controllers\ContactDetailsController.cs" />
+    <Compile Include="Controllers\ContactInformationController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DependencyRegistration.cs" />
     <Compile Include="Global.asax.cs">
